@@ -9,6 +9,17 @@ public class ArbreBinaire implements Iterable<ArbreBinaire> {
         this.setEtiquette(etiquette);
     }
 
+    public ArbreBinaire(String etiquette, ArbreBinaire filsGauche){
+        this.etiquette = etiquette;
+        this.filsGauche = filsGauche;
+    }
+
+    public ArbreBinaire(String etiquette, ArbreBinaire filsGauche, ArbreBinaire filsDroit){
+        this.etiquette = etiquette;
+        this.filsGauche = filsGauche;
+        this.filsDroit = filsDroit;
+    }
+
 
     @Override
     public ArbreBinaireIterator iterator() {
